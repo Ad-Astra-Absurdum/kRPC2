@@ -1,0 +1,121 @@
+$gray1: #323233;
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 8fr 6fr;
+}
+
+.nav {
+  background-color: $gray1;
+  text-align: center;
+  font-family: "Roboto";
+
+  h1 {
+    color: #d9d9d9;
+    font-size: 45px;
+    margin: 0;
+    margin-top: 70px;
+  }
+
+  h2 {
+    color: #969696;
+    font-size: 35px;
+    margin: 0;
+    bottom: 10px;
+    position: relative;
+    font-style: italic;
+  }
+
+  hr {
+    width: 60%;
+    border-color: #707070;
+  }
+}
+
+.doc {
+  font-family: "Segoe UI";
+
+  h1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 30px;
+    color: #595959;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 37px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #595959;
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    color: #595959;
+    font-size: 17px;
+  }
+
+  .box {
+    border-bottom: 1px solid #b0b0b0;
+    background-color: #f7f7f1;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .green {
+    background-color: #b0f7b4;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+
+  code {
+    background-color: #d8d8d8;
+    padding: 1px 10px;
+    font-family: "Roboto Mono";
+    font-size: 80%;
+    border-radius: 100px;
+  }
+
+  .bottomnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    padding: 10px 0px;
+    font-style: italic;
+
+    a {
+      color: #595959;
+    }
+
+    #back {
+      padding-left: 20px;
+    }
+
+    #forward {
+      padding-right: 20px;
+      text-align: right;
+      font-weight: bold;
+    }
+  }
+}
+
+.code {
+  background-color: black;
+}

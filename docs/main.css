@@ -1,0 +1,123 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 8fr 6fr;
+      grid-template-columns: 3fr 8fr 6fr;
+}
+
+.nav {
+  background-color: #323233;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.nav h1 {
+  color: #d9d9d9;
+  font-size: 45px;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.nav h2 {
+  color: #969696;
+  font-size: 35px;
+  margin: 0;
+  bottom: 10px;
+  position: relative;
+  font-style: italic;
+}
+
+.nav hr {
+  width: 60%;
+  border-color: #707070;
+}
+
+.doc {
+  font-family: "Segoe UI";
+}
+
+.doc h1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  padding-left: 20px;
+  font-style: italic;
+  font-size: 30px;
+  color: #595959;
+}
+
+.doc h2 {
+  margin: 0;
+  padding-top: 37px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #595959;
+}
+
+.doc p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  color: #595959;
+  font-size: 17px;
+}
+
+.doc .box {
+  border-bottom: 1px solid #b0b0b0;
+  background-color: #f7f7f1;
+}
+
+.doc .white {
+  background-color: white;
+}
+
+.doc .green {
+  background-color: #b0f7b4;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.doc code {
+  background-color: #d8d8d8;
+  padding: 1px 10px;
+  font-family: "Roboto Mono";
+  font-size: 80%;
+  border-radius: 100px;
+}
+
+.doc .bottomnav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 10px 0px;
+  font-style: italic;
+}
+
+.doc .bottomnav a {
+  color: #595959;
+}
+
+.doc .bottomnav #back {
+  padding-left: 20px;
+}
+
+.doc .bottomnav #forward {
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.code {
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */
