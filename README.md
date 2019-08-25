@@ -5,4 +5,5 @@
 
 * kRPC2 wiki page:  [kRPC2 wiki](https://github.com/KozmoKode/kRPC2/wiki "Google's Homepage")
 
-  * This is the initial consolidation point for planning and feedback
+  * This is the initial consolidation point for planning and feedback - DekozmikMayhem
+  
