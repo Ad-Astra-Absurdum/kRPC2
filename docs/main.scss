@@ -70,7 +70,7 @@ nav {
     padding: 20px 20px;
     width: 80%;
     background-color: $colorLight;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     text-align: left;
     font-size: 16px;
     margin: auto;
@@ -88,7 +88,8 @@ nav {
     }
 
     a:hover,
-    a:active {
+    a:active,
+    .active {
       background-color: $colorDarkText;
       color: $colorDark;
     }
@@ -125,15 +126,23 @@ article {
 
     margin: 0;
     margin-bottom: 20px;
+    padding-top: 10px;
   }
 
   p {
     color: $colorText;
     font-size: 17px;
     padding-left: 30px;
+    padding-right: 30px;
 
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  a {
+    font-style: italic;
+    color: rgb(155, 120, 168);
+    text-decoration: none;
   }
 
   .alert {

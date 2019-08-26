@@ -1,5 +1,5 @@
 function load(id) {
-  $("#" + id).load("code/codebox.html", function() {
+  $("#" + id).load("/code/codebox.html", function() {
     $("#" + id)
       .find("button")
       .each(function(index) {
@@ -13,7 +13,7 @@ function load(id) {
 
 function loadLanguage(id, language) {
   $.get(
-    "code/" + id + "/code." + language,
+    "/code/" + id + "/code." + language,
     function(data) {
       $("#" + id)
         .find("code")

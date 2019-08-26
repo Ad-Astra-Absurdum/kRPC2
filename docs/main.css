@@ -56,7 +56,7 @@ nav .nav {
   padding: 20px 20px;
   width: 80%;
   background-color: #434343;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   text-align: left;
   font-size: 16px;
   margin: auto;
@@ -75,7 +75,8 @@ nav .nav a {
 }
 
 nav .nav a:hover,
-nav .nav a:active {
+nav .nav a:active,
+nav .nav .active {
   background-color: #969696;
   color: #323233;
 }
@@ -110,14 +111,22 @@ article h2 {
   padding-left: 30px;
   margin: 0;
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 article p {
   color: #595959;
   font-size: 17px;
   padding-left: 30px;
+  padding-right: 30px;
   margin: 0;
   margin-bottom: 20px;
+}
+
+article a {
+  font-style: italic;
+  color: #9b78a8;
+  text-decoration: none;
 }
 
 article .alert {
