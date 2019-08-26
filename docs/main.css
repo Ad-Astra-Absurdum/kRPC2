@@ -58,7 +58,7 @@ nav .nav {
   background-color: #434343;
   border-radius: 10px 10px 0px 0px;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   margin: auto;
 }
 
@@ -136,8 +136,9 @@ article .green {
 .codewrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 4fr 5fr;
+      grid-template-columns: 4fr 5fr;
+  grid-gap: 10px;
 }
 
 .codewrapper .codebox {
@@ -148,7 +149,7 @@ article .green {
 
 .codewrapper .codebox .buttons {
   background-color: #434343;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   padding-left: 10px;
 }
 

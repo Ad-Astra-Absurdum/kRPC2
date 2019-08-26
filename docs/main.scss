@@ -72,7 +72,7 @@ nav {
     background-color: $colorLight;
     border-radius: 10px 10px 0px 0px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     margin: auto;
 
     a {
@@ -152,7 +152,8 @@ article {
 
 .codewrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 5fr;
+  grid-gap: 10px;
 
   .codebox {
     background-color: $colorDark;
@@ -161,7 +162,7 @@ article {
 
     .buttons {
       background-color: $colorLight;
-      border-radius: 10px 10px 0px 0px;
+      border-radius: 20px 20px 0px 0px;
       padding-left: 10px;
 
       button {
