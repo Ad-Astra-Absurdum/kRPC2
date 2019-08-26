@@ -1,121 +1,190 @@
-$gray1: #323233;
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+
+$font: "Open Sans", sans-serif;
+$fontMono: "Inconsolata", monospace;
+
+$colorDark: #323233;
+$colorLight: #434343;
+$colorText: #595959;
+$colorLightText: #d9d9d9;
+$colorDarkText: #969696;
+$colorLightBack: #f7f7f1;
 
 html,
 body {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: $font;
+
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
-.wrapper {
+body {
   display: grid;
-  grid-template-columns: 3fr 8fr 6fr;
+
+  grid-template-columns: 1fr 4fr;
 }
 
-.nav {
-  background-color: $gray1;
+nav {
+  background-color: $colorDark;
   text-align: center;
-  font-family: "Roboto";
 
   h1 {
-    color: #d9d9d9;
-    font-size: 45px;
+    color: $colorLightText;
+    font-size: 4vw;
+
     margin: 0;
-    margin-top: 70px;
+    padding-top: 9vh;
   }
 
   h2 {
-    color: #969696;
-    font-size: 35px;
-    margin: 0;
-    bottom: 10px;
-    position: relative;
+    color: $colorDarkText;
     font-style: italic;
+    font-size: 3vw;
+
+    margin: 0;
+    padding-bottom: 5vh;
   }
 
   hr {
-    width: 60%;
-    border-color: #707070;
+    width: 70%;
+    border: none;
+    border-top: 2px solid $colorDarkText;
+  }
+
+  input {
+    background-color: $colorLight;
+    color: $colorLightText;
+    width: 70%;
+
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 3vh 0px;
+  }
+
+  .nav {
+    padding: 20px 20px;
+    width: 80%;
+    background-color: $colorLight;
+    border-radius: 10px 10px 0px 0px;
+    text-align: left;
+    font-size: 20px;
+    margin: auto;
+
+    a {
+      background-color: $colorDark;
+      border-radius: 100px;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 2px 15px;
+      display: block;
+      color: $colorDarkText;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      background-color: $colorDarkText;
+      color: $colorDark;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+    }
   }
 }
 
-.doc {
-  font-family: "Segoe UI";
+article {
+  background-color: $colorLightBack;
+  font-family: $font;
 
   h1 {
-    width: 100%;
+    background-color: white;
     margin: 0;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 15px 30px;
+    border-top: 2px solid $colorLightText;
+    border-bottom: 2px solid $colorLightText;
     font-style: italic;
-    font-size: 30px;
-    color: #595959;
+    font-weight: 600;
+    color: $colorText;
+    font-size: 40px;
+    margin-bottom: 30px;
   }
 
   h2 {
+    font-weight: 600;
+    color: $colorText;
+    font-size: 30px;
+    padding-left: 30px;
+
     margin: 0;
-    padding-top: 37px;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #595959;
+    margin-bottom: 20px;
   }
 
   p {
-    margin: 0;
-    padding: 20px;
-    font-size: 20px;
-    color: #595959;
+    color: $colorText;
     font-size: 17px;
+    padding-left: 30px;
+
+    margin: 0;
+    margin-bottom: 20px;
   }
 
-  .box {
-    border-bottom: 1px solid #b0b0b0;
-    background-color: #f7f7f1;
-  }
-
-  .white {
-    background-color: white;
+  .alert {
+    padding: 20px;
+    padding-left: 30px;
+    margin: 20px auto;
+    border-top: 2px solid $colorLightText;
+    border-bottom: 2px solid $colorLightText;
+    font-weight: 600;
   }
 
   .green {
-    background-color: #b0f7b4;
-    font-weight: bold;
-    padding: 10px 15px;
-  }
-
-  code {
-    background-color: #d8d8d8;
-    padding: 1px 10px;
-    font-family: "Roboto Mono";
-    font-size: 80%;
-    border-radius: 100px;
-  }
-
-  .bottomnav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-
-    padding: 10px 0px;
-    font-style: italic;
-
-    a {
-      color: #595959;
-    }
-
-    #back {
-      padding-left: 20px;
-    }
-
-    #forward {
-      padding-right: 20px;
-      text-align: right;
-      font-weight: bold;
-    }
+    background-color: rgb(152, 233, 152);
   }
 }
 
-.code {
-  background-color: black;
+.codewrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .codebox {
+    background-color: $colorDark;
+    border-radius: 20px;
+    width: 90%;
+
+    .buttons {
+      background-color: $colorLight;
+      border-radius: 10px 10px 0px 0px;
+      padding-left: 10px;
+
+      button {
+        border-radius: 10px 10px 0px 0px;
+        border: none;
+        background-color: $colorLight;
+        color: $colorDarkText;
+        font-size: 16px;
+        padding: 3px 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+
+      button:hover,
+      button:active,
+      .active {
+        background-color: $colorDark;
+        color: $colorLightText;
+      }
+    }
+
+    code {
+      padding: 0px 40px;
+    }
+  }
 }
