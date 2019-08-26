@@ -174,4 +174,8 @@ article .green {
 .codewrapper .codebox code {
   padding: 0px 40px;
 }
+
+.codewrapper .codebox pre {
+  padding-bottom: 20px;
+}
 /*# sourceMappingURL=main.css.map */
