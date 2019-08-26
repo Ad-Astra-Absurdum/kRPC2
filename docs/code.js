@@ -28,4 +28,12 @@ function loadLanguage(id, language) {
     },
     "text"
   );
+
+  $("#" + id)
+    .find(".active")
+    .removeClass("active");
+
+  $("#" + id)
+    .find("#" + language)
+    .addClass("active");
 }
